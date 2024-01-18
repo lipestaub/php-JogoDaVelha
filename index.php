@@ -28,12 +28,12 @@
             $position = (int) readline("$playerName ($player), digite o código de uma das posições disponíveis: ");
         
             if (!boardPositionExists($board, $position)) {
-                echo "\n Posição inexistente, tente novamente.\n";
+                echo "\n Posição inexistente, tente novamente!\n";
                 continue;
             }
 
             if (!isBoardPositionAvailable($board, $position)) {
-                echo "\n Posição ocupada, tente novamente.\n";
+                echo "\n Posição ocupada, tente novamente!\n";
                 continue;
             }
             
